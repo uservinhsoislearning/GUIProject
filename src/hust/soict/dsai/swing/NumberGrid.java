@@ -28,6 +28,9 @@ public class NumberGrid extends JFrame {
         setSize(200, 200);
         setVisible(true);
     }
+    public static void main(String[] args){
+        new NumberGrid();
+    }
     void addButtons(JPanel panelButtons) {
         ButtonListener btnListener = new ButtonListener();
         for (int i = 1; i <= 9; i++) {
@@ -55,9 +58,9 @@ public class NumberGrid extends JFrame {
             if(button.charAt(0) >= '0' && button.charAt(0) <= '9') {
                 tfDisplay.setText(tfDisplay.getText() + button);
             } else if (button.equals("DEL")){
-                tfDisplay.setText("Fixing...");
+                tfDisplay.setText(tfDisplay.getText().substring(0, tfDisplay.getText().length()-1));
             } else {
-                tfDisplay.setText("Fixing...");
+                tfDisplay.setText("");
             }
         }
     }
