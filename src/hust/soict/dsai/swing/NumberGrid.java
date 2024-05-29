@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 
 public class NumberGrid extends JFrame {
     private JButton[] btnNumbers = new JButton[10];
-    private JButton bthDelete, btnReset;
+    private JButton btnDelete, btnReset;
     private JTextField tfDisplay;
 
     public NumberGrid() {
@@ -55,7 +55,7 @@ public class NumberGrid extends JFrame {
             if(button.charAt(0) >= '0' && button.charAt(0) <= '9') {
                 tfDisplay.setText(tfDisplay.getText() + button);
             } else if (button.equals("DEL")){
-                
+
             } else {
 
             }
