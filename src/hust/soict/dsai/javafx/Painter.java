@@ -6,11 +6,10 @@ import javafx.scene.Parent;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 
-import static javafx.application.Application.launch;
-
-public class Painter {
+public class Painter extends Application {
+    
     @Override
-    public void Start(Stage stage) throws Exception {
+    public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().
                 getResource("/hust/soict/dsai/javafx/Painter.fxml"));
 
