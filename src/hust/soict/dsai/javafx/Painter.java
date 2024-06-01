@@ -12,7 +12,7 @@ public class Painter {
     @Override
     public void Start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().
-                getResource("/hust/soict/program/javafx/Painter.fxml"));
+                getResource("/hust/soict/dsai/javafx/Painter.fxml"));
 
         Scene scene = new Scene(root);
         stage.setTitle("Painter");
