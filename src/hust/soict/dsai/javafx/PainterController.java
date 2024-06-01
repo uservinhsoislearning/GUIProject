@@ -24,4 +24,7 @@ public class PainterController {
                 event.getY(), 4, Color.BLACK);
         drawingAreaPane.getChildren().add(newCircle);
     }
+    void penRadioButtonPressed(ActionEvent event) {
+
+    }
 }
