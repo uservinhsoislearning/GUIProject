@@ -5,7 +5,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
-import java.awt.event.ActionEvent;
+import javafx.event.ActionEvent;
 import java.awt.event.MouseEvent;
 
 public class PainterController {
