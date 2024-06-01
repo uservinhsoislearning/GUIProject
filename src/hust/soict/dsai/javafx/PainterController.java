@@ -5,13 +5,13 @@ import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseEvent;
 
 public class PainterController {
     @FXML
     private Pane drawingAreaPane;
+    private Color color = Color.BLACK;
 
     @FXML
     void clearButtonPressed(ActionEvent event) {
@@ -21,10 +21,17 @@ public class PainterController {
     @FXML
     void drawingAreaMouseDragged(MouseEvent event) {
         Circle newCircle = new Circle(event.getX(),
-                event.getY(), 4, Color.BLACK);
+                event.getY(), 4, color);
         drawingAreaPane.getChildren().add(newCircle);
     }
-    void penRadioButtonPressed(ActionEvent event) {
 
+    @FXML
+    void penRadioButtonPressed(ActionEvent event) {
+        color = Color.BLACK;
+    }
+
+    @FXML
+    void eraserRadioButtonPressed(ActionEvent event) {
+        color = Color.WHITE;
     }
 }
