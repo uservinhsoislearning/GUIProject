@@ -1,5 +1,13 @@
 package hust.soict.dsai.javafx;
 
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+
+import static javafx.application.Application.launch;
+
 public class Painter {
     @Override
     public void Start(Stage stage) throws Exception {
